@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boostrap CDN including boostrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--Boostrap CDN including boostrap icons -->
+    <!--Connecting external CSS to HTML file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Connecting external CSS to HTML file-->
+    <!--Goolge Fonts | Smooch & Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Smooch&display=swap" rel="stylesheet"> 
+    <!--Goolge Fonts | Smooch & Open Sans -->
+    <!--Setting up a icon for web application-->
+    <link rel="icon" href="/images/BookRecipes logo 2.png" type="image/x-icon">
+    <!--Setting up a icon for web application-->
+    <title>BookRecipes</title>
+</head>
+<!--body-content-->
+<body class="main-content">
+  <!--nav-bar-->
+    <header class="sticky-top navbar-sticky-section">
+        <!--nav-bar-left-side-->
+        <nav class="navbar navbar-inside px-5 py-0">
+            <div class="web-icon-title d-flex gap-3 align-items-center">
+              <div class="icon">
+                <img src="images/BookRecipes logo 1.png" alt="bookrecipes" height="40">
+              </div>
+              <a href="#home" data-id="home">book recipes</a>
+            </div>
+        <!--nav-bar-left-side-->
+            <!--nav-bar-right-side-->
+            <ul class="nav nav-tabs controls gap-3" >
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#home" data-id="home">home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#recipes" data-id="recipes">recipes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#foods" data-id="foods">Foods</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#login" data-bs-toggle="modal" data-bs-target="#login">login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#signup" data-bs-toggle="modal" data-bs-target="#signup" >signup</a>
+                  </li>               
+              </ul>
+              <!--nav-bar-right-side-->
+        </nav>
+    </header>
+    <!--nav-bar-->
+    <!--main-content-->
+    <main class="container-fluid p-0 main-section">
+          <!--home-section-->
+          <section class="section sec1 home active-sec" id="home">
+            <div id="carouselExampleControls" class="carousel slide carousel-section" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>            
+              <div class="carousel-inner">
+                <div class="carousel-item active carousel-section" data-bs-interval="5000">
+                  <img src="images/Food 1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Welcome to BookRecipes!</h1>
+                    <p>Let's and take down all your <span>home-made food recipes</span></p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="images/Food 2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Food 3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="text-center icons-text-section p-5 m-5">
+              <div class="row icons-text-section-row align-items-center justify-content-evenly m-auto gap-5">
+                  <div class="col icons-text-section-col p-3">
+                    <img src="images/book.png" alt="" class="mb-3">
+                    <h6>List down the food recipes</h6>
+                    <p>Able to take down the recipes of your favorite foods even it has many ingredients, we are here to save you to and let us memorize that all recipes. </p>
+                  </div>
+                  <div class="col icons-text-section-col p-3">
+                    <img src="images/time.png" alt="" class="mb-3">                   
+                    <h6>Measure the coooking time</h6>
+                    <p>You are able to measure the time of your cook time by the helps of the book recipes.</p>
+                  </div>
+                  <div class="col icons-text-section-col p-3">
+                    <img src="images/create.png" alt="" class="mb-3">                     
+                    <h6>Create your personal book recipes</h6>
+                    <p>if you are forgettable person this is for you, you're able to creaete your own book recipes and look it everytime you'll cook.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="navbar footer-section row m-auto align-items-center justify-content-around p-3">
+                <div class="col-6 footer-first-col">
+                  <h3 id="head-text" class="text-center text-capitalize">inspiration behind this project </h3>
+                  <p class="text-center">Since I experience having difficulty on remembering the food recipes i cook, I decided to create a web that will help me to remember every recipes of my favorite foods.</p>
+                  <div class="faqs d-flex justify-content-center mt-3">
+                    <a href="" class="text-decoration-underline text-info"  >FAQs</a>
+                  </div>
+                </div>
+                <div class="col footer-second-col">
+                  <h3 class="text-center text-capitalize">follow me on my</h3>
+                  <div class="icons d-flex justify-content-center gap-5 mt-3">
+                  <a href=""><i class="bi bi-linkedin"></i></a> 
+                  <a href=""><i class="bi bi-github"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>  
+                  </div>
+                </div>
+            </div>
+            <div class="navbar footer-section-second-layer d-flex justify-content-center pt-3">
+              <h6>&copy; <span id="date">1998</span>  developed by Kent Miciano</h6>
+            </div>
+          </section>
+          <!--home-section-->
+          <!--recipes-section-->
+          <section class="section sec2 recipes" id="recipes">
+            <div class="container recipe-opening d-flex flex-column justify-content-center align-items-center mt-5 gap-2">
+              <div class="recipe-title">
+                <h1>All Recipes of Your Favorite Foods</h1>
+              </div>
+              <div class="recipe-explanation">
+                <h5>You are able to create your own food recipes here in BookRecipes, and let the website remember all your ingredients, cook time, prep time, etc. 
+                  and check it everytime you forgot the ingredients or the recipes anywhere, anytime, wherever you are.
+                </h5>
+              </div>
+            </div>
+            <div class="container recipe-container py-4">
+              <h3><i class="bi bi-arrow-90deg-right"></i> Food Recipes</h3>
+              <hr>
+              <div class="row recipe-items position-relative" >
+                <div class="col recipe-item">
+                  <div class="recipe-item-img">
+                    <img class="img-fluid" src="images/bicol-express-recipe.jpg" alt="">
+                    <div class="recipe-item-content">
+                      <h4>bicol express</h4>
+                      <button type="button" class="btn btn-primary"><a href="">view recipe</a> </button>
+                    </div>
+                  </div>
+                    <h4>bicol express</h4>
+                    <h6>Prep time - <span>30 minutes</span> | Cook time - <span>45 minutes</span></h6>
+                </div>
+                <div class="col recipe-item">
+                  <div class="recipe-item-img">
+                    <img class="img-fluid" src="images/adobo-baboy-recipe.jpg" alt="">
+                    <div class="recipe-item-content">
+                      <h4>adobo baboy</h4>
+                      <button type="button" class="btn btn-primary"><a href="">view recipe</a> </button>
+                    </div>
+                  </div>
+                  <h4>adobo baboy</h4>
+                  <h6>Prep time - <span>1 hour</span> | Cook time - <span>30 minutes</span></h6>
+                </div>
+                <div class="col recipe-item">
+                  <div class="recipe-item-img">
+                    <img class="img-fluid" src="images/pork-tinola-recipe.jpg" alt="">
+                    <div class="recipe-item-content">
+                      <h4>pork tinola</h4>
+                      <button type="button" class="btn btn-primary"><a href="">view recipe</a> </button>
+                    </div>
+                  </div>
+                  <h4>pork tinola</h4>
+                  <h6>Prep time - <span>30 minutes</span> | Cook time - <span>50 minutes</span></h6>
+                </div>
+                <div class="col recipe-item">
+                  <div class="recipe-item-img">
+                    <img class="img-fluid" src="images/bistek-style-pork-steak-recipe.jpg" alt="">
+                    <div class="recipe-item-content">
+                      <h4>bistek style pork steak</h4>
+                      <button type="button" class="btn btn-primary"><a href="">view recipe</a> </button>
+                    </div>
+                  </div>
+                  <h4>bistek style pork steak</h4>
+                  <h6>Prep time - <span>15 minutes</span> | Cook time - <span>60 minutes</span></h6>
+                </div>  
+                <div class="col recipe-item">
+                  <div class="recipe-item-img">
+                    <img class="img-fluid" src="images/fish-sarciado-recipe.jpg" alt="">
+                    <div class="recipe-item-content">
+                      <h4>fish sarciado</h4>
+                      <button type="button" class="btn btn-primary"><a href="">view recipe</a> </button>
+                    </div>
+                  </div>
+                  <h4>fish sarciado</h4>
+                  <h6>Prep time - <span>15 minutes</span> | Cook time - <span>25 minutes</span></h6>
+                </div>
+                <div class="col recipe-item add-new-recipe">
+                  <div class="recipe-item-img">
+                    <img class="img-fluid" src="images/Create New Recipe Black.png" alt="">
+                    <div class="recipe-item-content">
+                      <h4>Empty title</h4>
+                      <button type="button" class="btn btn-primary btn-create-recipe" data-bs-toggle="modal" data-bs-target="#login"><i class="bi bi-plus-lg"></i> create own recipe </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            </div>
+            <div class="navbar footer-section row m-auto align-items-center justify-content-around p-3">
+                  <div class="col-6 footer-first-col">
+                    <h3 id="head-text" class="text-center text-capitalize">inspiration behind this project </h3>
+                    <p class="text-center">Since I experience having difficulty on remembering the food recipes i cook, I decided to create a web that will help me to remember every recipes of my favorite foods.</p>
+                    <div class="faqs d-flex justify-content-center mt-3">
+                      <a href="" class="text-decoration-underline text-info"  >FAQs</a>
+                    </div>
+                  </div>
+                  <div class="col footer-second-col">
+                    <h3 class="text-center text-capitalize">follow me on my</h3>
+                    <div class="icons d-flex justify-content-center gap-3 mt-3">
+                    <a href=""><i class="bi bi-linkedin"></i></a> 
+                    <a href=""><i class="bi bi-github"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>  
+                    </div>
+                  </div>
+            </div>
+            <div class="navbar footer-section-second-layer d-flex justify-content-center pt-3">
+              <h6>&copy; <span id="date">1998</span>  developed by Kent Miciano</h6>
+            </div>
+          </section>
+          <!--recipes-section-->
+          <!--foods-section-->
+          <section class="section sec3 foods" id="foods">
+            <div class="container search-title d-flex justify-content-center mt-5">
+              <h1 class="text-center">how many recipes you've made?</h1>
+            </div>
+            <div class="container search-bar-container mb-3 mt-3 d-flex justify-content-center">
+              <div class="input-group search-parent mb-3">
+                <input type="search" class="form-control rounded py-2 search-bar" placeholder="Look for food you like..." aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-primary px-3 py-2"><i class="bi bi-search"></i> search</button>
+              </div>
+            </div>
+            <div class="container search-list">
+              <div class="foods-header mb-3">
+                <h3>foods <span>(2)</span></h3>
+              </div>
+              <div class="row row-cols-1 px-5 mb-3 search-items" >
+                <div class="col search-item text-start py-1">
+                  <h5><i class="bi bi-arrow-right"></i> pork sinigang</h5>
+                </div>
+                <div class="col search-item text-start py-1">
+                  <h5><i class="bi bi-arrow-right"></i> pork adobo</h5>
+                </div>
+              </div>
+            </div>
+            <div class="navbar footer-section row m-auto align-items-center justify-content-around p-3">
+              <div class="col-6 footer-first-col">
+                <h3 id="head-text" class="text-center text-capitalize">inspiration behind this project </h3>
+                <p class="text-center">Since I experience having difficulty on remembering the food recipes i cook, I decided to create a web that will help me to remember every recipes of my favorite foods.</p>
+                <div class="faqs d-flex justify-content-center mt-3">
+                  <a href="" class="text-decoration-underline text-info"  >FAQs</a>
+                </div>
+              </div>
+              <div class="col footer-second-col">
+                <h3 class="text-center text-capitalize">follow me on my</h3>
+                <div class="icons d-flex justify-content-center gap-3 mt-3">
+                <a href=""><i class="bi bi-linkedin"></i></a> 
+                <a href=""><i class="bi bi-github"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>  
+                </div>
+              </div>
+            </div>
+            <div class="navbar footer-section-second-layer d-flex justify-content-center pt-3">
+              <h6>&copy; <span id="date">1998</span>  developed by Kent Miciano</h6>
+            </div>
+          </section>
+          <!--foods-section-->
+          <!--Login-dialog-->
+          <div class="modal-dialog modal-dialog-login">
+            <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close btn-close-login" id="btn-close-login" data-bs-dismiss="modal" aria-label="close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="d-grid p-2 mb-2 gap-2 justify-content-center needs-validation" novalidate  action="">
+                        <div class="col input-section">
+                          <input type="text" class="form-control" id="userName" required placeholder="User name">                  
+                        </div>
+                        <div class="col input-section"> 
+                          <input type="password" class="form-control password" id="password" required placeholder="Password">  
+                        </div>
+                    </div>
+                    </form>
+                    <div class="remember-forgot d-flex gap-3 justify-content-evenly px-2">
+                      <div class="form-check mb-2 mr-sm-2">
+                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">
+                          Remember me?
+                        </label>
+                      </div>
+                      <a class="forgot-password" href="">Forgot password?</a>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-evenly">
+                    <button type="button" data-bs-target="#signup" data-bs-toggle="modal" class="btn btn-dark btn-signup" >Sign-up</button>
+                    <button type="button" class="btn btn-primary btn-login" id="login">Log-in</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Login-dialog-->
+          <!--Signup-dialog-->
+          <div class="modal-dialog">
+            <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Signup</h5>
+                    <button type="button" class="btn-close btn-close-signup" id="btn-close-signup" data-bs-dismiss="modal" aria-label="close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h3 class="text-center create-text">Create your account</h3>
+                    <form class="row row-cols-2 p-2 mb-2 justify-content-center needs-validation" novalidate  action="">
+                        <div class="col mb-3 input-section">
+                          <input type="text" class="form-control" id="firstName" required placeholder="First name">                  
+                        </div>
+                        <div class="col mb-3 input-section"> 
+                          <input type="text" class="form-control password" id="lastName" required placeholder="Last name">  
+                        </div>
+                        <div class="col mb-3 input-section">
+                          <input type="email" class="form-control" id="emailAddress" placeholder="Email address">
+                        </div>
+                        <div class="col mb-3 input-section">
+                          <input type="text" class="form-control" id="userName" placeholder="User name">
+                        </div>
+                        <div class="col input-section"> 
+                          <input type="text" class="form-control password" id="password" required placeholder="Password">  
+                        </div>
+                        <div class="col input-section"> 
+                          <input type="text" class="form-control password" id="confirmPassword" required placeholder="Confirm password">  
+                        </div>
+                      </div>
+                    </form>
+                    <!-- To-do
+                    <div class="remember-forgot d-flex justify-content-between px-5">
+                      <div class="form-check mb-2 mr-sm-2">
+                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">
+                          Remember me?
+                        </label>
+                      </div>
+                      <a class="forgot-password" href="">Forgot password?</a>
+                  </div>
+                  -->
+                  <div class="modal-footer d-flex justify-content-center px-2">
+                    <button type="button" class="btn btn-dark btn-confirm-signup" >Sign-up</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Signup-dialog-->
+    </main>
+    <!--ends-here-->
+    <!--Boostrap CDN with JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!--Boostrap CDN with JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--jQuery CDN-->
+    <!--Connecting external JavaScript to HTML File-->
+    <script type="module" src="js/javascript.js"></script>
+    <!--Connecting external JavaScript to HTML File-->
+</body>
+<!--body-content-->
+</html>
